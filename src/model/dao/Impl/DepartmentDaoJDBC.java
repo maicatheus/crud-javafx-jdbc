@@ -40,8 +40,6 @@ public class DepartmentDaoJDBC implements DepartmentDao{
 				 ResultSet rs = st.getGeneratedKeys();
 				 if(rs.next()) {
 					 
-					 System.out.println(rs.getInt(1));
-					 
 					 int id = rs.getInt(1);
 					 obj.setId(id);
 				 }

@@ -73,7 +73,7 @@ public class SellerDaoJDBC implements SellerDao {
 					"UPDATE seller "
 					+ "SET Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ? "
 					+ "WHERE Id = ?");
-			
+			System.out.println(obj.getEmail());
 			st.setString(1, obj.getName());
 			st.setString(2, obj.getEmail());
 			st.setDate(3, new java.sql.Date(obj.getBrithDate().getTime()));

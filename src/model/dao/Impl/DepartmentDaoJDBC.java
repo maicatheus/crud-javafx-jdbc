@@ -65,7 +65,7 @@ public class DepartmentDaoJDBC implements DepartmentDao{
 					"UPDATE department "
 					+ "SET Name = ? "
 					+ "WHERE Id = ?");
-			
+			System.out.println(obj.getName());
 			st.setString(1, obj.getName());
 			st.setInt(2, obj.getId());
 			
